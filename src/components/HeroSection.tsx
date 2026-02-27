@@ -49,8 +49,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <Button size="lg" className="gap-2">
-              Request a Demo <ArrowRight size={16} />
+            <Button size="lg" className="gap-2" asChild>
+              <a href="mailto:pedro@vezza.dev">Request a Demo <ArrowRight size={16} /></a>
             </Button>
           </motion.div>
         </div>
