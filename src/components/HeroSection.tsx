@@ -52,9 +52,6 @@ const HeroSection = () => {
             <Button size="lg" className="gap-2">
               Request a Demo <ArrowRight size={16} />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
-              Learn More
-            </Button>
           </motion.div>
         </div>
       </div>
