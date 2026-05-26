@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 525 917"
+   width="525"
+   height="917"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="vza-logo-basic-shapes.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.90369541"
+     inkscape:cx="-40.942999"
+     inkscape:cy="428.79492"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <line
+     x1="132"
+     y1="50"
+     x2="475"
+     y2="867"
+     stroke="#00897b"
+     stroke-width="80"
+     stroke-linecap="round"
+     id="line1"
+     style="stroke-width:100;stroke-dasharray:none" />
+  <line
+     x1="397"
+     y1="50"
+     x2="50"
+     y2="867"
+     stroke="#00897b"
+     stroke-width="80"
+     stroke-linecap="round"
+     id="line2"
+     style="stroke-width:100;stroke-dasharray:none" />
+  <path
+     d="m 301.18029,148.30283 -152.628,69.9152 34.36186,81.04859 42.59426,-21.1803 -1,304.38769 150.4906,-81.59826 -28.12985,-68.82909 -46.68887,20.64386 z"
+     style="fill:#f9a602;stroke-width:0.902148"
+     id="path2"
+     sodipodi:nodetypes="ccccccccc" />
+</svg>
