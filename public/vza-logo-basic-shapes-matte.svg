@@ -1,0 +1,41 @@
+<svg viewBox="-30 -30 585 977" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- soft, very diffuse shadow (matte objects cast soft shadows) -->
+          <filter id="v10-softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="22"></feGaussianBlur>
+            <feOffset dx="0" dy="24"></feOffset>
+            <feComponentTransfer><feFuncA type="linear" slope="0.32"></feFuncA></feComponentTransfer>
+            <feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+          </filter>
+          <!-- matte surface: fine grain + very subtle rim darkening -->
+          <filter id="v10-matte" x="-5%" y="-5%" width="110%" height="110%">
+            <!-- very fine grain — the microscopic texture that scatters light -->
+            <feTurbulence type="fractalNoise" baseFrequency="5.5" numOctaves="2" seed="5" result="noise"></feTurbulence>
+            <feColorMatrix in="noise" values="0 0 0 0 0
+                                              0 0 0 0 0
+                                              0 0 0 0 0
+                                              0 0 0 0.18 -0.07" result="grain"></feColorMatrix>
+            <feComposite in="grain" in2="SourceAlpha" operator="in" result="grainIn"></feComposite>
+            <!-- subtle rim darkening (gives slight volume without shine) -->
+            <feMorphology in="SourceAlpha" operator="erode" radius="14" result="eroded"></feMorphology>
+            <feComposite in="SourceAlpha" in2="eroded" operator="arithmetic" k1="0" k2="1" k3="-1" k4="0" result="rim"></feComposite>
+            <feGaussianBlur in="rim" stdDeviation="5" result="rimBlur"></feGaussianBlur>
+            <feColorMatrix in="rimBlur" values="0 0 0 0 0
+                                                0 0 0 0 0
+                                                0 0 0 0 0
+                                                0 0 0 0.25 0" result="rimDark"></feColorMatrix>
+            <feMerge>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+              <feMergeNode in="rimDark"></feMergeNode>
+              <feMergeNode in="grainIn"></feMergeNode>
+            </feMerge>
+          </filter>
+        </defs>
+        <g filter="url(#v10-softShadow)">
+          <g filter="url(#v10-matte)">
+            <line x1="132" y1="50" x2="475" y2="867" stroke="#00897b" stroke-width="100" stroke-linecap="round"></line>
+            <line x1="397" y1="50" x2="50" y2="867" stroke="#00897b" stroke-width="100" stroke-linecap="round"></line>
+            <path d="m 301.18,148.3 -152.63,69.92 34.36,81.05 42.59,-21.18 -1,304.39 150.49,-81.6 -28.13,-68.83 -46.69,20.64 z" fill="#f9a602"></path>
+          </g>
+        </g>
+      </svg>
