@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="114 114 772 772">
+  <!-- Same mark as vza-logo.svg with the viewBox cropped to content bounds,
+       so the glyph fills the icon square at favicon sizes -->
+  <path d="M 164 300 L 380 750 M 620 250 L 836 700 M 380 250 H 620 L 380 750 H 620" fill="none" stroke="#00897b" stroke-width="100" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="380" cy="430" r="58" fill="#f9a602"/>
+</svg>

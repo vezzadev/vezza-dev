@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <!-- soft, very diffuse shadow (matte objects cast soft shadows) -->
+    <filter id="softShadow" filterUnits="userSpaceOnUse" x="-150" y="-150" width="1300" height="1300">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="22"/>
+      <feOffset dx="0" dy="24"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.32"/></feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- matte surface: fine grain + subtle rim darkening around the union silhouette -->
+    <filter id="matte" filterUnits="userSpaceOnUse" x="-150" y="-150" width="1300" height="1300">
+      <feTurbulence type="fractalNoise" baseFrequency="5.5" numOctaves="2" seed="5" result="noise"/>
+      <feColorMatrix in="noise" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.18 -0.07" result="grain"/>
+      <feComposite in="grain" in2="SourceAlpha" operator="in" result="grainIn"/>
+      <feMorphology in="SourceAlpha" operator="erode" radius="14" result="eroded"/>
+      <feComposite in="SourceAlpha" in2="eroded" operator="arithmetic" k1="0" k2="1" k3="-1" k4="0" result="rim"/>
+      <feGaussianBlur in="rim" stdDeviation="14" result="rimBlur"/>
+      <feColorMatrix in="rimBlur" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.25 0" result="rimDark"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="rimDark"/>
+        <feMergeNode in="grainIn"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#softShadow)">
+    <path d="M 164 300 L 380 750 M 620 250 L 836 700 M 380 250 H 620 L 380 750 H 620" fill="none" stroke="#00897b" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" filter="url(#matte)"/>
+    <circle cx="380" cy="430" r="58" fill="#f9a602" filter="url(#matte)"/>
+  </g>
+</svg>
