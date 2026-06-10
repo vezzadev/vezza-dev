@@ -1,70 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="228.61485"
-   height="408.15314"
-   viewBox="0 0 228.61485 408.15314"
-   role="img"
-   aria-labelledby="title desc"
-   version="1.1"
-   id="svg3"
-   sodipodi:docname="vza-logo.svg"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-   inkscape:export-filename="vza-logo-500px.pmg"
-   inkscape:export-xdpi="209.96011"
-   inkscape:export-ydpi="209.96011"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs3" />
-  <sodipodi:namedview
-     id="namedview3"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.5549133"
-     inkscape:cx="-132.48327"
-     inkscape:cy="171.39219"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g3"
-     inkscape:export-bgcolor="#00000000" />
-  <title
-     id="title">VZA monogram logo</title>
-  <desc
-     id="desc">A clean vector version of the supplied green and yellow VZA-style monogram.</desc>
-  <g
-     fill="none"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     id="g3"
-     transform="translate(-84.14733,-21)">
-    <path
-       d="M 137.5,39 295.76218,412.15313"
-       stroke="#00897b"
-       stroke-width="34"
-       id="path1"
-       sodipodi:nodetypes="cc" />
-    <path
-       d="M 257.5,38 101.14733,412.15313"
-       stroke="#00897b"
-       stroke-width="34"
-       id="path2"
-       sodipodi:nodetypes="cc" />
-    <path
-       d="M 157.42919,91.181584 194.35584,75.568467 193.9499,247.02138 222.80805,234.88047"
-       stroke="#f9a602"
-       stroke-width="32"
-       id="path3"
-       sodipodi:nodetypes="cccc"
-       style="stroke-width:30.1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4.1;stroke-dasharray:none" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- VZA shared-stroke ligature: the central diagonal is simultaneously the Z's
+       diagonal, the V's right stroke, and the A's left stroke. Free ends sit at the
+       longest length whose caps survive a circular avatar crop (endpoint <= 396 from
+       center). 180-degree rotational symmetry about (500,500) -->
+  <path d="M 164 300 L 380 750 M 620 250 L 836 700 M 380 250 H 620 L 380 750 H 620" fill="none" stroke="#00897b" stroke-width="100" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Head in the V's notch: raised-arms reading, focal start of the V-Z-A scan -->
+  <circle cx="380" cy="430" r="58" fill="#f9a602"/>
 </svg>
